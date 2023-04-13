@@ -1,4 +1,4 @@
-#[candid::candid_method(query)]
+#[candid::candid_method(query, rename = "candid_method")]
 #[ic_cdk_macros::query(name = "candid_method")]
 pub fn rust_method() -> bool {
     true
